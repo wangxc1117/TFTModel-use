@@ -10,7 +10,7 @@ add_definitions(-DARMA_DONT_USE_WRAPPER)
 set(ENV{ARMA_DONT_USE_WRAPPER} 1)
 
 # === Python & Pybind11 ===
-find_package(Python3 3.12 EXACT REQUIRED COMPONENTS Interpreter Development)
+find_package(Python3 REQUIRED REQUIRED COMPONENTS Interpreter Development)
 find_package(pybind11 REQUIRED)
 
 # === Armadillo ===
